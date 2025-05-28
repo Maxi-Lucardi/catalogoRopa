@@ -1,0 +1,133 @@
+/* Paleta base: tonos neutros y acentos cálidos */
+:root {
+  --color-primario: #d87d4a;
+  --color-secundario: #fef1e6;
+  --color-texto: #333;
+  --color-fondo: #ffffff;
+  --color-footer: #222;
+  --color-footer-texto: #ddd;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-primario);
+  padding: 1rem;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--color-primario);
+  padding-bottom: 0.5rem;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.slide {
+  min-width: 300px;
+  height: 200px;
+  background-color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: var(--color-footer-texto);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.redes a {
+  color: var(--color-footer-texto);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #25D366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b96535;
+}
